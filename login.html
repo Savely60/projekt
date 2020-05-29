@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block body %}
+ <div class="container mt-5">
+    <form method="post">
+     <input type="text" name="username" id="username" class="form-control" placeholder="Введите логин"><br>
+     <input type="text" name="password" id="password" class="form-control" placeholder="Введите пароль"><br>
+     <input type="submit" class="btn btn-success" value="Зарегестрироваться">
+    </form>
+
+  </div>
+{% endblock %}
+
+{% block title %}
+ Правила безопасности.
+{% endblock %}

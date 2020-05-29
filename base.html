@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="{{url_for ('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <title>{% block title %}{% endblock %}</title>
+</head>
+<div class="container">
+    <header class="blog-header py-3">
+    <div class="row flex-nowrap justify-content-between align-items-center">
+      <div class="col-4 pt-1">
+          <a class="text-muted" href="/sign">Регистрация</a>
+      </div>
+      <div class="col-4 text-center">
+        <a class="blog-header-logo text-dark" href="/"><ya-tr-span data-index="1-0" data-value="Lords Mobile Library" data-translation="Библиотека Lords Mobile" data-type="trSpan">Lords Mobile Library</ya-tr-span></a>
+      </div>
+      <div class="col-4 d-flex justify-content-end align-items-center">
+        <a class="btn btn-sm btn-outline-secondary" href="#"><ya-tr-span data-index="2-0" data-value="Calculator items" data-translation="Калькулятор предметов" data-type="trSpan">Калькулятор предметов</ya-tr-span></a>
+      </div>
+    </div>
+        <nav class="nav d-flex justify-content-between">
+      <a class="p-2 text-muted" href="#">Герои</a>
+      <a class="p-2 text-muted" href="#">Постройки</a>
+      <a class="p-2 text-muted" href="#">Исследования</a>
+      <a class="p-2 text-muted" href="#">Фамильяры</a>
+      <a class="p-2 text-muted" href="#">Экипировка</a>
+    </nav>
+  </header>
+
+
+
+    {% block body %}{% endblock %}
+    <footer class="my-5 pt-5 text-muted text-center">
+        <ul class="list-inline">
+        <li class="list-inline-item"><a href="/def"><ya-tr-span data-index="69-0" data-value="Privacy" data-translation="Конфиденциальность" data-type="trSpan">Безопасность</ya-tr-span></a></li>
+        <li class="list-inline-item"><a href="/arts"><ya-tr-span data-index="70-0" data-value="Terms" data-translation="Условия" data-type="trSpan">Статьи пользователей</ya-tr-span></a></li>
+        </ul>
+     </footer>
+    <div>
+</body>
+
+</html>
