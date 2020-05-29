@@ -4,7 +4,6 @@ from flask import Flask, render_template, request, redirect
 from flask_migrate import Migrate
 from flask_sqlalchemy import SQLAlchemy
 
-from app import db
 from config import Config
 
 app = Flask(__name__)
